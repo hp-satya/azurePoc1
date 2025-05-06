@@ -1,0 +1,18 @@
+{
+  "name": "azurepoc1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm start\"",
+    "build": "cd frontend && npm run build",
+    "test": "concurrently \"cd frontend && npm test\" \"cd backend && npm test\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
